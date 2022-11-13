@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.viewport{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+}
+
+/* Navbar */
+.navbar{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.nav_links{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 30px; */
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link a {
+    margin-left: 35px;
+    margin-right: 35px;
+    text-decoration: none;
+    color: coral;
+}
+.hamburger_icon {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+}
+
+/*  Sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: -3px 0 5px 0 #555;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: coral;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Landing Screen */
+.landing_screen{
+    min-height: 85vh;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.content{
+    width: 100%;
+    height: 85vh;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* .right_content{
+    width: 50%;
+    height: 85vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* Footer */
+.footer{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .hamburger_icon {
+            display: inline;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    .link{
+        display: none;
+    }
+}
