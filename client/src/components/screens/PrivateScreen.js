@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "./Navbar";
 
 const PrivateScreen = ({ history }) => {
   const [error, setError] = useState("");
@@ -39,7 +40,9 @@ const PrivateScreen = ({ history }) => {
     <span className="error-message">{error}</span>
   ) : (
     <>
+      <Navbar />
       <div style={{ background: "green", color: "white" }}>{privateData}</div>
+      <p>Here will be the main page task pages</p>
       <button onClick={logoutHandler}>Logout</button>
     </>
   );
