@@ -19,7 +19,125 @@
   align-items: center;
   justify-content: center;
   margin-left: 2.5rem;
+  cursor: pointer;
 }
+.weather_and_logout {
+  border: 1px solid black;
+  margin-right: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.weather_and_logout:hover {
+  background-color: rgb(232, 227, 227);
+}
+
+/* For Popover */
+.popover_outside {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+.cityLabel {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+.serachBox {
+  display: flex;
+  /* flex-direction: row; */
+  border: 1px solid black;
+  border-radius: 2px;
+  color: black;
+  margin: 20px auto;
+}
+.searchBox_input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.searchBox_button {
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* For weather details */
+.weather_condition {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+.condition {
+  margin: 20px auto;
+  font-size: 14px;
+}
+.condition_2 {
+  font-size: 28px;
+}
+.weather_logo {
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+}
+.location {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.weatherInfoLabel {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px 25px 10px;
+  text-align: start;
+  width: 90%;
+}
+
+.weatherInfoContainer {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.infoContainer {
+  display: flex;
+  margin: 5px 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.infoIcon {
+  width: 36px;
+  height: 36px;
+}
+.infoLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin: 15px;
+}
+.infoLabel_2 {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
 /*  Sidenav */
 .sidenav2 {
   height: 100%;

@@ -11,6 +11,10 @@ import RegisterScreen from "./components/screens/RegisterScreen";
 import ForgotPasswordScreen from "./components/screens/ForgotPasswordScreen";
 import ResetPasswordScreen from "./components/screens/ResetPasswordScreen";
 import LandingPage from "./components/screens/LandingPage";
+import News from "./components/screens/News";
+
+import NewsCards from "./components/screens/NewsCards/NewsCards";
+import NewsCard from "./components/screens/NewsCard/NewsCard";
 
 const App = () => {
   return (
@@ -31,6 +35,10 @@ const App = () => {
             component={ResetPasswordScreen}
           />
           <Route exact path="/landingpage" component={LandingPage} />
+          <Route exact path="/news" component={News} />
+
+          <Route path="/newscard" component={NewsCards} />
+          <Route path="/newscards" component={NewsCard} />
         </Switch>
       </div>
     </Router>
