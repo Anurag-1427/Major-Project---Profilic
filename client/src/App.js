@@ -41,7 +41,7 @@ const App = () => {
           <Route path="/newscard" component={NewsCards} />
           <Route path="/newscards" component={NewsCard} />
           <Route path="/newscards" component={NewsCard} />
-          <Route path="/calculator" component={Calculator} />
+          <Route exact path="/calculator" component={Calculator} />
         </Switch>
       </div>
     </Router>

@@ -4,9 +4,6 @@
   --dark: #131a26;
   --light: #eee;
 }
-body {
-  background-color: var(--light);
-}
 
 .calculator {
   border: 1px solid black;
@@ -31,7 +28,7 @@ body {
   color: #888;
 }
 
-button {
+.button {
   appearance: none;
   border: none;
   outline: none;
@@ -42,7 +39,7 @@ button {
   transition: 0.4s;
 }
 
-button:hover {
+.button:hover {
   opacity: 0.9;
 }
 
@@ -50,7 +47,7 @@ button:hover {
   display: flex;
 }
 
-.operators button {
+.operators_button {
   flex: 1 1 0%;
   background-color: var(--primary);
   font-weight: 700;
@@ -61,7 +58,7 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.digits button {
+.digits_button {
   flex: 1 1 33.333%;
   max-width: 33.333%;
   background-color: var(--dark);

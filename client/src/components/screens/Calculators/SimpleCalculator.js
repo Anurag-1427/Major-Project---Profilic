@@ -25,7 +25,11 @@ const SimpleCalculator = () => {
     const digits = [];
     for (let i = 1; i < 10; i++) {
       digits.push(
-        <button onClick={() => updateCalc(i.toString())} key={i}>
+        <button
+          className="digits_button button"
+          onClick={() => updateCalc(i.toString())}
+          key={i}
+        >
           {i}
         </button>
       );
@@ -54,19 +58,53 @@ const SimpleCalculator = () => {
         </div>
 
         <div className="operators">
-          <button onClick={() => updateCalc("/")}>/</button>
-          <button onClick={() => updateCalc("*")}>*</button>
-          <button onClick={() => updateCalc("+")}>+</button>
-          <button onClick={() => updateCalc("-")}>-</button>
+          <button
+            className="operators_button button"
+            onClick={() => updateCalc("/")}
+          >
+            /
+          </button>
+          <button
+            className="operators_button button"
+            onClick={() => updateCalc("*")}
+          >
+            *
+          </button>
+          <button
+            className="operators_button button"
+            onClick={() => updateCalc("+")}
+          >
+            +
+          </button>
+          <button
+            className="operators_button button"
+            onClick={() => updateCalc("-")}
+          >
+            -
+          </button>
 
-          <button onClick={deleteLast}>DEL</button>
+          <button className=" operators_button button" onClick={deleteLast}>
+            DEL
+          </button>
         </div>
 
         <div className="digits">
           {createDigits()}
-          <button onClick={() => updateCalc("0")}>0</button>
-          <button onClick={() => updateCalc(".")}>.</button>
-          <button onClick={calculate}>=</button>
+          <button
+            className="digits_button button"
+            onClick={() => updateCalc("0")}
+          >
+            0
+          </button>
+          <button
+            className="digits_button button"
+            onClick={() => updateCalc(".")}
+          >
+            .
+          </button>
+          <button className="digits_button button" onClick={calculate}>
+            =
+          </button>
         </div>
       </div>
     </>
