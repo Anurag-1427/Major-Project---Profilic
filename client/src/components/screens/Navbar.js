@@ -95,9 +95,9 @@ const Navbar = () => {
           <Link className="closebtn" onClick={closeNav}>
             &times;
           </Link>
-          <Link to="news">News Section</Link>
-          {/* <Link to="register">Register</Link>
-          <Link to="login">Login</Link> */}
+          <Link to="/news">News Section</Link>
+          <Link to="/calculator">Calculator</Link>
+          {/* <Link to="login">Login</Link> */}
         </div>
         <div className="navbar-logo">Profilic Dashboard</div>
 

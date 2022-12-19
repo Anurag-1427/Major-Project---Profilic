@@ -15,6 +15,7 @@ import News from "./components/screens/News";
 
 import NewsCards from "./components/screens/NewsCards/NewsCards";
 import NewsCard from "./components/screens/NewsCard/NewsCard";
+import Calculator from "./components/screens/Calculator";
 
 const App = () => {
   return (
@@ -39,6 +40,8 @@ const App = () => {
 
           <Route path="/newscard" component={NewsCards} />
           <Route path="/newscards" component={NewsCard} />
+          <Route path="/newscards" component={NewsCard} />
+          <Route path="/calculator" component={Calculator} />
         </Switch>
       </div>
     </Router>
