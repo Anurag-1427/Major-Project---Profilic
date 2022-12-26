@@ -163,7 +163,8 @@
 }
 
 .sidenav2 a:hover {
-  color: coral;
+  /* color: coral; */
+  color: #389fbb;
 }
 
 .sidenav2 .closebtn {

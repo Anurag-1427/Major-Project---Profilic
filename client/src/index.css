@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -34,7 +34,8 @@ body {
 }
 
 .form-group input:focus {
-  border-bottom: 3px solid coral;
+  /* border-bottom: 3px solid coral; */
+  border-bottom: 3px solid #389fbb;
 }
 
 .btn {
@@ -50,7 +51,8 @@ body {
 }
 
 .btn-primary {
-  background-color: coral;
+  /* background-color: coral; */
+  background-color: #389fbb;
   color: #fff;
 }
 
