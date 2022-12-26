@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
+import lp_img from "../screens/lp_img.png";
 
 const LandingPage = () => {
   const openNav = () => {
@@ -36,8 +37,19 @@ const LandingPage = () => {
       </div>
       <div className="landing_screen">
         <div className="content">
-          <h1>Welcome to Profilic Web Applicaition</h1>
-          <p>One place for your major tasks.</p>
+          <div className="left-content">
+            <div className="main_C">
+              <h1>
+                Welcome to <span>Profilic Web Applicaition</span>
+              </h1>
+              <p>One place for your major tasks...</p>
+            </div>
+          </div>
+          <div className="right-content">
+            <div className="lp_image-container">
+              <img src={lp_img} />
+            </div>
+          </div>
         </div>
       </div>
       <div className="footer">
