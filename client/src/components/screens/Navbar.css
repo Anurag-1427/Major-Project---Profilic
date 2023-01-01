@@ -1,11 +1,11 @@
 .navbar-container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .navbar-logo {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: inline;
   padding: 0.5rem;
   margin-left: 2.5rem;
@@ -14,7 +14,7 @@
 
 .hamburger_icon-nav {
   display: inline;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;

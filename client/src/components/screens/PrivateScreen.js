@@ -59,10 +59,12 @@ const PrivateScreen = ({ history }) => {
     <span className="error-message">{error}</span>
   ) : (
     <>
+      <Navbar />
       <div className="container">
-        <Navbar />
-        <div style={{ background: "green", color: "white" }}>{privateData}</div>
-        <p>Here will be the main page task pages</p>
+        {/* <div style={{ background: "green", color: "white" }}>{privateData}</div> */}
+        <h1>Now, you will start your work</h1>
+        <p>Go to the main task page</p>
+
         <button onClick={logoutHandler}>Logout</button>
         <div className="quotes_container">
           <div className="quote">
