@@ -98,6 +98,7 @@ const Navbar = () => {
           <Link to="/">Dashboard</Link>
           <Link to="/news">News Section</Link>
           <Link to="/calculator">Calculator</Link>
+          <Link to="/bucketListScreen">Bucket List</Link>
           {/* <Link to="login">Login</Link> */}
         </div>
         <div className="navbar-logo">Profilic Dashboard</div>
